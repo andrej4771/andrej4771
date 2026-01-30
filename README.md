@@ -2,6 +2,8 @@
 
 # 👋 Hi, I'm Andrej
 
+
+
 🎓 **Internet, Networks & Security Student**  
 ⚙️ **DevOps-minded | Cybersecurity curious | Systems & Network focused**  
 🐧 **Linux-first approach to building and securing systems**
