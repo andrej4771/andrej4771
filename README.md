@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="400" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=42&duration=2500&pause=1000&color=4D5BCE&center=true&vCenter=true&width=800&lines=Andrej+Jovanoski" />
+  <img width="420" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=40&duration=2500&pause=1000&color=4D5BCE&center=true&vCenter=true&width=900&lines=Hi%2C+I'm+Andrej+Atanaskov" />
 </p>
 
 ## 👋 Hey, I’m Andrej
