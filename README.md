@@ -35,15 +35,4 @@
 
 ---
 
-### 📫 Connect with me
-[LinkedIn](https://www.linkedin.com) • [Email](mailto:your.email@example.com)
-
----
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=andrej4771&show_icons=true&theme=default" />
-</p>
-
----
-
 ### 🔍 Check out my repos below 👇
