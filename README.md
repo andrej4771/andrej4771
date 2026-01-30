@@ -2,8 +2,6 @@
 
 # 👋 Hi, I'm Andrej
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=DevOps-minded+Developer;Cybersecurity+Curious;Linux+%26+Systems+Enthusiast)](https://git.io/typing-svg)
-
 🎓 **Internet, Networks & Security Student**  
 ⚙️ **DevOps-minded | Cybersecurity curious | Systems & Network focused**  
 🐧 **Linux-first approach to building and securing systems**
