@@ -1,42 +1,41 @@
-# 👋 Hi, I’m Andrej
+# 🌆 Hi, I’m Andrej
 
-🎓 Computer Science student  
-🌐 Internet, Networks & Security  
-🐧 Linux enthusiast | Backend & Infrastructure curious
+🎓 Internet, Networks & Security student  
+⚙️ DevOps-minded | Cybersecurity curious | Systems & Network focused  
+🐧 Linux-first approach to building and securing systems
 
-I like understanding how systems *actually* work under the hood.
-
----
-
-## 🔥 Current Focus
-- Networking fundamentals (DNS, HTTP, VPN, NFS)
-- Linux server configuration & troubleshooting
-- Security basics & CTF-style thinking
+I’m interested in how infrastructure, networks, and security fit together in real-world systems.
 
 ---
 
-## 🧰 Tech & Tools
+## 🔍 Areas of Interest
+- Computer Networks & protocols
+- Linux system administration
+- DevOps fundamentals
+- Cybersecurity & defensive thinking
+- Backend concepts (supporting infrastructure)
+
+---
+
+## 🔧 Technologies & Tools
 - Linux (Ubuntu / Pop!_OS)
 - Bash & Git
-- Networking: DNS, HTTP, TCP/IP
+- Networking: DNS, HTTP, TCP/IP, VPN
 - Web servers: Apache
-- Virtualization & VPNs
+- Virtual machines & server configuration
 
 ---
 
-## 📌 Highlighted Work
-Check out my pinned repositories below 👇  
-They include networking labs, configs, and hands-on experiments.
+## 📌 What You’ll Find Here
+- Networking and security labs
+- Linux & server configuration projects
+- Notes and experiments from coursework
+- Practical infrastructure setups
 
 ---
 
 ## 🎯 Goals
-- Build strong foundations in networks & security
-- Create practical, well-documented projects
-- Prepare for Work & Travel experience 🇺🇸
+- Build strong foundations in networks and security
+- Grow into a DevOps / infrastructure-oriented role
+- Create clean, documented, real-world projects
 
----
-
-📫 **Contact**
-- GitHub: @andrej4771  
-- (LinkedIn / Email coming soon)
