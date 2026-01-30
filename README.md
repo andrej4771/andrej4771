@@ -19,26 +19,12 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 
 ## 🔍 Areas of Interest
 
-<table>
-<tr>
-<td width="50%">
-
-- 🌐 Computer Networks & Protocols
-- 🐧 Linux System Administration
-- 🔄 DevOps Fundamentals & CI/CD
-- 🔒 Cybersecurity & Defensive Thinking
-
-</td>
-<td width="50%">
-
-- 🖥️ Backend Infrastructure
-- 📊 Monitoring & Logging
-- 🛡️ Security Hardening
-- 📡 Network Architecture
-
-</td>
-</tr>
-</table>
+```
+🌐  Computer Networks & Protocols       🐧  Linux System Administration
+🔄  DevOps Fundamentals & CI/CD         🔒  Cybersecurity & Defensive Thinking
+🖥️  Backend Infrastructure              📊  Monitoring & Logging
+🛡️  Security Hardening                  📡  Network Architecture
+```
 
 ---
 
@@ -64,42 +50,17 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 
 ## 📌 Featured Projects
 
-<table>
-<tr>
-<td width="50%">
-
 ### 🖥️ [System Administration Guide](https://github.com/andrej4771/system-administration)
-Step-by-step Ubuntu Linux system administration with verified commands and network service configurations.
-
-**Tech:** Linux, Apache, DNS, SSH
-
-</td>
-<td width="50%">
+> Step-by-step Ubuntu Linux system administration with verified commands and network service configurations.  
+> **Tech Stack:** Linux, Apache, DNS, SSH
 
 ### 🛡️ [Infra Guardian](https://github.com/andrej4771/infra-guardian)
-Infrastructure monitoring and security project.
-
-**Tech:** Linux, Security, Monitoring
-
-</td>
-</tr>
-<tr>
-<td width="50%">
+> Infrastructure monitoring and security project.  
+> **Tech Stack:** Linux, Security, Monitoring
 
 ### ☕ [Web Programming Labs](https://github.com/andrej4771/web-programming)
-Web Programming laboratory exercises and projects.
-
-**Tech:** Java, Web Development
-
-</td>
-<td width="50%">
-
-### 📚 More Projects Coming Soon...
-Currently working on networking labs and security experiments!
-
-</td>
-</tr>
-</table>
+> Web Programming laboratory exercises and projects.  
+> **Tech Stack:** Java, Web Development
 
 ---
 
@@ -135,6 +96,19 @@ Currently working on networking labs and security experiments!
 - 🔨 Contribute to open-source infrastructure projects
 
 ---
+
+## 📫 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+
+</div>
+
+---
+
+<div align="center">
 
 ### 💡 *"Building secure, scalable systems one command at a time"*
 
