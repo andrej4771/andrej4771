@@ -1,41 +1,157 @@
-# 👋 Hi, I’m Andrej
+<div align="center">
 
-🎓 Internet, Networks & Security student  
-⚙️ DevOps-minded | Cybersecurity curious | Systems & Network focused  
-🐧 Linux-first approach to building and securing systems
+# 👋 Hi, I'm Andrej
 
-I’m interested in how infrastructure, networks, and security fit together in real-world systems.
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=DevOps-minded+Developer;Cybersecurity+Curious;Linux+%26+Systems+Enthusiast)](https://git.io/typing-svg)
+
+🎓 **Internet, Networks & Security Student**  
+⚙️ **DevOps-minded | Cybersecurity curious | Systems & Network focused**  
+🐧 **Linux-first approach to building and securing systems**
+
+I'm interested in how infrastructure, networks, and security fit together in real-world systems.
+
+[![GitHub followers](https://img.shields.io/github/followers/andrej4771?style=social)](https://github.com/andrej4771)
+[![GitHub stars](https://img.shields.io/github/stars/andrej4771?style=social)](https://github.com/andrej4771)
+
+</div>
 
 ---
 
 ## 🔍 Areas of Interest
-- Computer Networks & protocols
-- Linux system administration
-- DevOps fundamentals
-- Cybersecurity & defensive thinking
-- Backend concepts (supporting infrastructure)
+
+<table>
+<tr>
+<td width="50%">
+
+- 🌐 Computer Networks & Protocols
+- 🐧 Linux System Administration
+- 🔄 DevOps Fundamentals & CI/CD
+- 🔒 Cybersecurity & Defensive Thinking
+
+</td>
+<td width="50%">
+
+- 🖥️ Backend Infrastructure
+- 📊 Monitoring & Logging
+- 🛡️ Security Hardening
+- 📡 Network Architecture
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔧 Technologies & Tools
-- Linux (Ubuntu / Pop!_OS)
-- Bash & Git
-- Networking: DNS, HTTP, TCP/IP, VPN
-- Web servers: Apache
-- Virtual machines & server configuration
+
+### Operating Systems & Core
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+### Networking & Infrastructure
+![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)
+![DNS](https://img.shields.io/badge/DNS-0078D4?style=for-the-badge&logo=cloudflare&logoColor=white)
+![TCP/IP](https://img.shields.io/badge/TCP%2FIP-0080FF?style=for-the-badge&logo=cisco&logoColor=white)
+![VPN](https://img.shields.io/badge/VPN-00599C?style=for-the-badge&logo=openvpn&logoColor=white)
+
+### Development
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ---
 
-## 📌 What You’ll Find Here
-- Networking and security labs
-- Linux & server configuration projects
-- Notes and experiments from coursework
-- Practical infrastructure setups
+## 📌 Featured Projects
+
+<table>
+<tr>
+<td width="50%">
+
+### 🖥️ [System Administration Guide](https://github.com/andrej4771/system-administration)
+Step-by-step Ubuntu Linux system administration with verified commands and network service configurations.
+
+**Tech:** Linux, Apache, DNS, SSH
+
+</td>
+<td width="50%">
+
+### 🛡️ [Infra Guardian](https://github.com/andrej4771/infra-guardian)
+Infrastructure monitoring and security project.
+
+**Tech:** Linux, Security, Monitoring
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ☕ [Web Programming Labs](https://github.com/andrej4771/web-programming)
+Web Programming laboratory exercises and projects.
+
+**Tech:** Java, Web Development
+
+</td>
+<td width="50%">
+
+### 📚 More Projects Coming Soon...
+Currently working on networking labs and security experiments!
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🎯 Goals
-- Build strong foundations in networks and security
-- Grow into a DevOps / infrastructure-oriented role
-- Create clean, documented, real-world projects
+## 📊 GitHub Stats
 
+<div align="center">
+
+![Andrej's GitHub stats](https://github-readme-stats.vercel.app/api?username=andrej4771&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=andrej4771&layout=compact&theme=tokyonight&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=andrej4771&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+## 🚀 Currently Working On
+
+- 🔧 Building practical network and security labs
+- 📖 Deepening knowledge in DevOps tools and practices
+- 🛡️ Exploring security hardening techniques
+- 🌐 Setting up home lab infrastructure
+
+---
+
+## 🎯 2025 Goals
+
+- ✅ Build strong foundations in networks and security
+- ✅ Grow into a DevOps / infrastructure-oriented role
+- ✅ Create clean, documented, real-world projects
+- 🎓 Pursue industry certifications (Linux+, Security+, or CCNA)
+- 🔨 Contribute to open-source infrastructure projects
+
+---
+
+## 📫 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://yourportfolio.com)
+
+</div>
+
+---
+
+<div align="center">
+
+### 💡 *"Building secure, scalable systems one command at a time"*
+
+![Profile Views](https://komarev.com/ghpvc/?username=andrej4771&color=blueviolet&style=flat-square)
+
+</div>
