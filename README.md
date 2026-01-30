@@ -1,41 +1,49 @@
-# 🌆 Hi, I’m Andrej
+<p align="center">
+  <img width="400" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=42&duration=2500&pause=1000&color=4D5BCE&center=true&vCenter=true&width=800&lines=Andrej+Jovanoski" />
+</p>
+
+## 👋 Hey, I’m Andrej
 
 🎓 Internet, Networks & Security student  
-⚙️ DevOps-minded | Cybersecurity curious | Systems & Network focused  
-🐧 Linux-first approach to building and securing systems
-
-I’m interested in how infrastructure, networks, and security fit together in real-world systems.
+🛠️ DevOps • Cybersecurity • Linux • Computer Networks  
+📚 Always learning and building in the systems space
 
 ---
 
-## 🔍 Areas of Interest
-- Computer Networks & protocols
-- Linux system administration
-- DevOps fundamentals
-- Cybersecurity & defensive thinking
-- Backend concepts (supporting infrastructure)
+### 🔭 I’m currently focused on:
+- Deepening hands-on understanding of Linux and networking
+- Exploring DevOps workflows and automation
+- Building tools that help secure and monitor infrastructure
 
 ---
 
-## 🔧 Technologies & Tools
-- Linux (Ubuntu / Pop!_OS)
-- Bash & Git
-- Networking: DNS, HTTP, TCP/IP, VPN
-- Web servers: Apache
-- Virtual machines & server configuration
+### 💻 Skills & Tools
+
+#### 🐧 Systems & Tools  
+![Linux](https://img.shields.io/badge/Linux-2C2E30?style=flat&logo=linux)  
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash)  
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git)
+
+#### 🌐 Networking & Security  
+![TCP/IP](https://img.shields.io/badge/TCP/IP-blue)  
+![HTTP](https://img.shields.io/badge/HTTP-orange)  
+![Security](https://img.shields.io/badge/Cybersecurity-purple)
+
+#### ☁️ DevOps & Infra  
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker)  
+![CI/CD](https://img.shields.io/badge/CI%2FCD-green)
 
 ---
 
-## 📌 What You’ll Find Here
-- Networking and security labs
-- Linux & server configuration projects
-- Notes and experiments from coursework
-- Practical infrastructure setups
+### 📫 Connect with me
+[LinkedIn](https://www.linkedin.com) • [Email](mailto:your.email@example.com)
 
 ---
 
-## 🎯 Goals
-- Build strong foundations in networks and security
-- Grow into a DevOps / infrastructure-oriented role
-- Create clean, documented, real-world projects
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=andrej4771&show_icons=true&theme=default" />
+</p>
 
+---
+
+### 🔍 Check out my repos below 👇
