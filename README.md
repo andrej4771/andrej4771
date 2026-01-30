@@ -20,10 +20,10 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 ## 🔍 Areas of Interest
 
 ```
-🌐  Computer Networks & Protocols             🐧  Linux System Administration
-🔄  DevOps Fundamentals & CI/CD               🔒  Cybersecurity & Defensive Thinking
-🖥️  Backend Infrastructure                    📊  Monitoring & Logging
-🛡️  Security Hardening                        📡  Network Architecture
+        🌐  Computer Networks & Protocols               🐧  Linux System Administration
+        🔄  DevOps Fundamentals & CI/CD                 🔒  Cybersecurity & Defensive Thinking
+        🖥️  Backend Infrastructure                      📊  Monitoring & Logging
+        🛡️  Security Hardening                          📡  Network Architecture
 ```
 
 ---
