@@ -1,38 +1,41 @@
-andrej@github:~$ whoami
+# 👋 Hi, I’m Andrej
 
-Andrej Atanaskov  
-Internet, Networks & Security student
+🎓 Internet, Networks & Security student  
+⚙️ DevOps-minded | Cybersecurity curious | Systems & Network focused  
+🐧 Linux-first approach to building and securing systems
 
-andrej@github:~$ cat profile.txt
+I’m interested in how infrastructure, networks, and security fit together in real-world systems.
 
-I focus on systems-level understanding:
-how networks communicate, how Linux systems are administered,
-and how infrastructure can be built and secured correctly.
+---
 
-I prefer clarity, simplicity, and tools that work close to the system.
+## 🔍 Areas of Interest
+- Computer Networks & protocols
+- Linux system administration
+- DevOps fundamentals
+- Cybersecurity & defensive thinking
+- Backend concepts (supporting infrastructure)
 
-andrej@github:~$ ls interests/
+---
 
-- computer_networks/
-- linux_systems/
-- system_administration/
-- cybersecurity/
-- devops_basics/
-- backend_fundamentals/
+## 🔧 Technologies & Tools
+- Linux (Ubuntu / Pop!_OS)
+- Bash & Git
+- Networking: DNS, HTTP, TCP/IP, VPN
+- Web servers: Apache
+- Virtual machines & server configuration
 
-andrej@github:~$ which tools
+---
 
-- Linux
-- Bash
-- Git
-- DNS
-- HTTP
-- Apache
-- VPN
+## 📌 What You’ll Find Here
+- Networking and security labs
+- Linux & server configuration projects
+- Notes and experiments from coursework
+- Practical infrastructure setups
 
-andrej@github:~$ pwd
+---
 
-This GitHub profile contains labs, notes, and small projects  
-related to networks, systems, and security.
+## 🎯 Goals
+- Build strong foundations in networks and security
+- Grow into a DevOps / infrastructure-oriented role
+- Create clean, documented, real-world projects
 
-andrej@github:~$ _
