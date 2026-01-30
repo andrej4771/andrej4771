@@ -67,12 +67,15 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 ## 📊 GitHub Stats
 
 <div align="center">
+  
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=andrej4771&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andrej4771&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
 
-![Andrej's GitHub stats](https://github-readme-stats.vercel.app/api?username=andrej4771&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
+</div>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=andrej4771&layout=compact&theme=tokyonight&hide_border=true)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=andrej4771&theme=tokyonight&hide_border=true)
+<div align="center">
+  
+[![GitHub Streak](https://streak-stats.demolab.com/?user=andrej4771&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 
 </div>
 
@@ -87,7 +90,7 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 
 ---
 
-## 🎯 2026 Goals
+## 🎯 2025 Goals
 
 - ✅ Build strong foundations in networks and security
 - ✅ Grow into a DevOps / infrastructure-oriented role
