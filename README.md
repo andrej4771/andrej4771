@@ -87,7 +87,7 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 
 ---
 
-## 🎯 2025 Goals
+## 🎯 2026 Goals
 
 - ✅ Build strong foundations in networks and security
 - ✅ Grow into a DevOps / infrastructure-oriented role
