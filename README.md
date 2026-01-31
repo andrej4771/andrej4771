@@ -5,7 +5,7 @@
 
 
 🎓 **Internet, Networks & Security Student**  
-⚙️ **DevOps-minded | Cybersecurity curious | Systems & Network focused**  
+⚙️ **Faculty of Computer Science and Engineering**
 🐧 **Linux-first approach to building and securing systems**
 
 I'm interested in how infrastructure, networks, and security fit together in real-world systems.
@@ -46,21 +46,6 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
----
-
-## 📌 Featured Projects
-
-### 🖥️ [System Administration Guide](https://github.com/andrej4771/system-administration)
-> Step-by-step Ubuntu Linux system administration with verified commands and network service configurations.  
-> **Tech Stack:** Linux, Apache, DNS, SSH
-
-### 🛡️ [Infra Guardian](https://github.com/andrej4771/infra-guardian)
-> Infrastructure monitoring and security project.  
-> **Tech Stack:** Linux, Security, Monitoring
-
-### ☕ [Web Programming Labs](https://github.com/andrej4771/web-programming)
-> Web Programming laboratory exercises and projects.  
-> **Tech Stack:** Java, Web Development
 
 ---
 
@@ -74,33 +59,12 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 
 ---
 
-## 🚀 Currently Working On
+## Currently Working On
 
-- 🔧 Building practical network and security labs
-- 📖 Deepening knowledge in DevOps tools and practices
-- 🛡️ Exploring security hardening techniques
-- 🌐 Setting up home lab infrastructure
-
----
-
-## 🎯 2026 Goals
-
-- ✅ Build strong foundations in networks and security
-- ✅ Grow into a DevOps / infrastructure-oriented role
-- ✅ Create clean, documented, real-world projects
-- 🎓 Pursue industry certifications (Linux+, Security+, or CCNA)
-- 🔨 Contribute to open-source infrastructure projects
-
----
-
-## 📫 Connect With Me
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-
-</div>
+- Building practical network and security labs
+- Deepening knowledge in DevOps tools and practices
+- Exploring security hardening techniques
+- Setting up home lab infrastructure
 
 ---
 
