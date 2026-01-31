@@ -49,15 +49,6 @@ I'm interested in how infrastructure, networks, and security fit together in rea
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-  
-[![GitHub Streak](https://streak-stats.demolab.com/?user=andrej4771&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-</div>
-
----
 
 ## Currently Working On
 
