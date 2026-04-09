@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Andrej Atanaskov — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg2: #0f0f16;
+    --surface: #13131c;
+    --border: #1e1e2e;
+    --accent: #00ff88;
+    --accent2: #00c8ff;
+    --accent3: #ff3c6e;
+    --text: #c8d0e0;
+    --muted: #4a5066;
+    --glow: 0 0 20px rgba(0,255,136,0.25);
+    --glow2: 0 0 20px rgba(0,200,255,0.2);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* Scanline overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.07) 2px,
+      rgba(0,0,0,0.07) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* Noise grain */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 9998;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 3rem;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.1rem;
+    color: var(--accent);
+    text-shadow: var(--glow);
+    letter-spacing: 0.05em;
+  }
+
+  .nav-logo span { color: var(--muted); }
+
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .nav-links a::before {
+    content: '// ';
+    color: var(--accent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a:hover::before { opacity: 1; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 3rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,136,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,136,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 100%);
+  }
+
+  .hero-content { max-width: 860px; position: relative; z-index: 1; }
+
+  .hero-tag {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--accent);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .hero-tag::before {
+    content: '';
+    display: inline-block;
+    width: 40px; height: 1px;
+    background: var(--accent);
+    box-shadow: var(--glow);
+  }
+
+  .hero-name {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+    color: #fff;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-name .cursor {
+    display: inline-block;
+    width: 0.6em; height: 1em;
+    background: var(--accent);
+    margin-left: 0.1em;
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+    box-shadow: var(--glow);
+  }
+
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+  .hero-role {
+    font-size: 1rem;
+    color: var(--accent2);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-desc {
+    color: var(--muted);
+    max-width: 520px;
+    font-size: 0.9rem;
+    line-height: 1.9;
+    margin-bottom: 3rem;
+  }
+
+  .hero-desc .hl { color: var(--text); }
+
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .btn {
+    padding: 0.75rem 1.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+    font-weight: 700;
+  }
+
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--accent);
+    box-shadow: var(--glow);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--muted);
+    border-color: var(--border);
+  }
+
+  .btn-ghost:hover {
+    color: var(--text);
+    border-color: var(--muted);
+  }
+
+  .hero-stats {
+    position: absolute;
+    right: 3rem;
+    bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 1;
+  }
+
+  .stat { text-align: right; }
+  .stat-num {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2rem;
+    color: var(--accent);
+    text-shadow: var(--glow);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  /* ── SECTION COMMON ── */
+  section { padding: 6rem 3rem; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .section-num {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+  }
+
+  .section-title {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border), transparent);
+  }
+
+  /* ── ABOUT ── */
+  #about { background: var(--bg2); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: 1000px;
+  }
+
+  .about-text p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+  }
+
+  .about-text p .hl { color: var(--text); }
+  .about-text p .acc { color: var(--accent); }
+
+  .about-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .about-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--accent);
+    box-shadow: var(--glow);
+  }
+
+  .about-card-title {
+    font-size: 0.7rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.8rem;
+  }
+
+  .info-row:last-child { border-bottom: none; }
+  .info-row .key { color: var(--muted); }
+  .info-row .val { color: var(--text); }
+  .info-row .val.green { color: var(--accent); }
+
+  /* ── SKILLS ── */
+  #skills {}
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+  }
+
+  .skill-group {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .skill-group:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 30px rgba(0,255,136,0.07);
+  }
+
+  .skill-group-title {
+    font-size: 0.7rem;
+    color: var(--accent2);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .skill-group-title::before {
+    content: '>';
+    color: var(--accent);
+  }
+
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+  .tag {
+    padding: 0.3rem 0.7rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    transition: all 0.2s;
+    cursor: default;
+  }
+
+  .tag:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .skill-bar-row { margin-bottom: 0.9rem; }
+
+  .skill-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    margin-bottom: 0.35rem;
+    color: var(--text);
+  }
+
+  .skill-bar-label span:last-child { color: var(--accent); }
+
+  .skill-bar-track {
+    height: 3px;
+    background: var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    box-shadow: 0 0 8px rgba(0,255,136,0.5);
+    width: 0;
+    transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  /* ── PROJECTS ── */
+  #projects { background: var(--bg2); }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+  }
+
+  .project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .project-card:hover {
+    border-color: rgba(0,255,136,0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  }
+
+  .project-card:hover::after { opacity: 1; }
+
+  .project-card.featured {
+    border-color: rgba(0,255,136,0.2);
+  }
+
+  .project-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .project-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .project-links { display: flex; gap: 0.5rem; }
+
+  .project-link {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--border);
+    transition: all 0.2s;
+  }
+
+  .project-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .project-name {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.02em;
+  }
+
+  .project-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.8;
+    flex: 1;
+  }
+
+  .project-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+  .stack-tag {
+    font-size: 0.7rem;
+    color: var(--accent2);
+    border: 1px solid rgba(0,200,255,0.2);
+    padding: 0.15rem 0.5rem;
+    background: rgba(0,200,255,0.05);
+  }
+
+  .project-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .status-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: var(--glow);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  /* ── CONTACT ── */
+  #contact {}
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 900px;
+    align-items: start;
+  }
+
+  .contact-intro {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+  }
+
+  .contact-intro .hl { color: var(--text); }
+
+  .contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.82rem;
+    transition: all 0.2s;
+    letter-spacing: 0.05em;
+  }
+
+  .contact-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(0,255,136,0.04);
+  }
+
+  .contact-link .link-icon {
+    font-size: 1rem;
+    color: var(--accent);
+    width: 20px;
+    text-align: center;
+  }
+
+  .contact-link .link-label { color: var(--muted); font-size: 0.7rem; }
+
+  .terminal-block {
+    background: #080810;
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.8rem;
+  }
+
+  .terminal-bar {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .t-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+  }
+
+  .t-dot:nth-child(1) { background: #ff5f57; }
+  .t-dot:nth-child(2) { background: #febc2e; }
+  .t-dot:nth-child(3) { background: #28c840; }
+
+  .t-line { margin-bottom: 0.4rem; }
+  .t-prompt { color: var(--accent); }
+  .t-cmd { color: var(--text); }
+  .t-out { color: var(--muted); }
+  .t-out.green { color: var(--accent); }
+  .t-out.blue { color: var(--accent2); }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--muted);
+    background: var(--bg);
+  }
+
+  footer .acc { color: var(--accent); }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+  /* ── ENTRANCE ANIMATIONS ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* stagger children */
+  .stagger > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .stagger.visible > * { opacity: 1; transform: none; }
+  .stagger.visible > *:nth-child(1) { transition-delay: 0.05s; }
+  .stagger.visible > *:nth-child(2) { transition-delay: 0.12s; }
+  .stagger.visible > *:nth-child(3) { transition-delay: 0.19s; }
+  .stagger.visible > *:nth-child(4) { transition-delay: 0.26s; }
+  .stagger.visible > *:nth-child(5) { transition-delay: 0.33s; }
+  .stagger.visible > *:nth-child(6) { transition-delay: 0.40s; }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { gap: 1.2rem; }
+    section { padding: 4rem 1.5rem; }
+    #hero { padding: 6rem 1.5rem 4rem; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-stats { display: none; }
+    .hero-name { font-size: clamp(2.5rem, 12vw, 4rem); }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">andrej<span>@</span>dev<span>:~$</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-tag">available for opportunities</div>
+    <h1 class="hero-name">Andrej<br>Atanaskov<span class="cursor"></span></h1>
+    <p class="hero-role">// CS Student &amp; Software Developer</p>
+    <p class="hero-desc">
+      Building software from the <span class="hl">terminal up</span>. Studying Computer Science at <span class="hl">FINKI, Skopje</span>. Passionate about clean architecture, domain-driven design, and making things that actually work.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">▶ View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch →</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">10+</div>
+      <div class="stat-label">Projects</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3rd</div>
+      <div class="stat-label">Year</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Curiosity</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header fade-up">
+    <span class="section-num">01.</span>
+    <span class="section-title">About Me</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid fade-up">
+    <div class="about-text">
+      <p>
+        Hey, I'm <span class="hl">Andrej</span> — a Computer Science student at <span class="acc">FINKI</span> in Skopje, Macedonia, with a love for building things that run close to the metal.
+      </p>
+      <p>
+        I daily-drive <span class="hl">Pop!_OS Linux</span>, write shell scripts for fun, and feel most at home in a terminal. Currently deep in <span class="hl">Spring Boot, domain-driven design</span>, and learning the full stack from the ground up.
+      </p>
+      <p>
+        When I'm not coding, I'm tinkering with modded Minecraft instances or tweaking my dev environment until it's exactly right. I believe in <span class="hl">understanding systems deeply</span> — not just making them work, but knowing <em>why</em> they work.
+      </p>
+    </div>
+
+    <div>
+      <div class="about-card">
+        <div class="about-card-title">// system.info</div>
+        <div class="info-row"><span class="key">name</span><span class="val">Andrej Atanaskov</span></div>
+        <div class="info-row"><span class="key">location</span><span class="val">Skopje, Macedonia</span></div>
+        <div class="info-row"><span class="key">education</span><span class="val">FINKI — CS</span></div>
+        <div class="info-row"><span class="key">os</span><span class="val">Pop!_OS Linux</span></div>
+        <div class="info-row"><span class="key">editor</span><span class="val">VS Code</span></div>
+        <div class="info-row"><span class="key">github</span><span class="val">andrej4771</span></div>
+        <div class="info-row"><span class="key">status</span><span class="val green">● open to work</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header fade-up">
+    <span class="section-num">02.</span>
+    <span class="section-title">Skills &amp; Tech Stack</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="skills-grid stagger" id="skillsGrid">
+
+    <div class="skill-group">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-tags">
+        <div style="width:100%">
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Java</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>C / C++</span><span>70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>Bash</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div></div>
+          <div class="skill-bar-row"><div class="skill-bar-label"><span>C# / .NET</span><span>55%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="55"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title">Frameworks &amp; Tools</div>
+      <div class="skill-tags">
+        <span class="tag">Spring Boot</span>
+        <span class="tag">Hibernate / JPA</span>
+        <span class="tag">Maven</span>
+        <span class="tag">ASP.NET WebForms</span>
+        <span class="tag">JUnit</span>
+        <span class="tag">REST APIs</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title">Systems &amp; DevOps</div>
+      <div class="skill-tags">
+        <span class="tag">Linux</span>
+        <span class="tag">Git / GitLab</span>
+        <span class="tag">systemd</span>
+        <span class="tag">VirtualBox</span>
+        <span class="tag">SSH</span>
+        <span class="tag">Docker (learning)</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title">CS Concepts</div>
+      <div class="skill-tags">
+        <span class="tag">Domain-Driven Design</span>
+        <span class="tag">OOP / SOLID</span>
+        <span class="tag">Operating Systems</span>
+        <span class="tag">Data Structures</span>
+        <span class="tag">Algorithms</span>
+        <span class="tag">Secure by Design</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header fade-up">
+    <span class="section-num">03.</span>
+    <span class="section-title">Projects</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid stagger">
+
+    <div class="project-card featured">
+      <div class="project-header">
+        <span class="project-icon">⚡</span>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub</a>
+          <a href="#" class="project-link">Demo</a>
+        </div>
+      </div>
+      <div class="project-name">Pop!_OS Power Manager</div>
+      <div class="project-desc">Terminal UI for managing battery profiles, CPU governors, and power plans on Linux. Integrates with system daemons for real-time monitoring.</div>
+      <div class="project-stack">
+        <span class="stack-tag">Bash</span>
+        <span class="stack-tag">systemd</span>
+        <span class="stack-tag">Linux</span>
+      </div>
+      <div class="project-status"><span class="status-dot"></span>Active</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-icon">🔍</span>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub</a>
+        </div>
+      </div>
+      <div class="project-name">Service Health Monitor</div>
+      <div class="project-desc">systemd-integrated health monitoring tool with desktop notifications, service status tracking, and configurable alert thresholds.</div>
+      <div class="project-stack">
+        <span class="stack-tag">Bash</span>
+        <span class="stack-tag">systemd</span>
+        <span class="stack-tag">libnotify</span>
+      </div>
+      <div class="project-status"><span class="status-dot"></span>Active</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-icon">🏛️</span>
+        <div class="project-links">
+          <a href="#" class="project-link">GitLab</a>
+        </div>
+      </div>
+      <div class="project-name">FacultyEvent DDD System</div>
+      <div class="project-desc">Spring Boot application applying Domain-Driven Design patterns — state-guarded methods, value objects, aggregate roots — for managing faculty events.</div>
+      <div class="project-stack">
+        <span class="stack-tag">Java</span>
+        <span class="stack-tag">Spring Boot</span>
+        <span class="stack-tag">JPA</span>
+        <span class="stack-tag">DDD</span>
+      </div>
+      <div class="project-status"><span class="status-dot"></span>In progress</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-icon">🗳️</span>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub</a>
+        </div>
+      </div>
+      <div class="project-name">Voting Web App</div>
+      <div class="project-desc">ASP.NET Web Forms application with login authentication and voting functionality, built as part of Internet Technologies coursework.</div>
+      <div class="project-stack">
+        <span class="stack-tag">C#</span>
+        <span class="stack-tag">ASP.NET</span>
+        <span class="stack-tag">.NET 4.8</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-icon">💌</span>
+        <div class="project-links">
+          <a href="#" class="project-link">Demo</a>
+        </div>
+      </div>
+      <div class="project-name">Valentine's Day Site</div>
+      <div class="project-desc">Animated HTML page with typewriter effect, floating SVG hearts, and a shrinking "No" button. Built with love for a special someone.</div>
+      <div class="project-stack">
+        <span class="stack-tag">HTML</span>
+        <span class="stack-tag">CSS</span>
+        <span class="stack-tag">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="project-card" style="border-style: dashed; display:flex; align-items:center; justify-content:center; min-height:200px;">
+      <div style="text-align:center; color: var(--muted);">
+        <div style="font-size:1.5rem; margin-bottom:0.5rem;">+</div>
+        <div style="font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase;">More coming soon</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header fade-up">
+    <span class="section-num">04.</span>
+    <span class="section-title">Contact</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-grid fade-up">
+    <div>
+      <p class="contact-intro">
+        I'm always open to talking about <span class="hl">interesting projects</span>, new opportunities, or just swapping notes on Linux setups and clean code. Feel free to reach out.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:andrej@example.com" class="contact-link">
+          <span class="link-icon">@</span>
+          <div>
+            <div>andrej@example.com</div>
+            <div class="link-label">Email</div>
+          </div>
+        </a>
+        <a href="https://github.com/andrej4771" class="contact-link" target="_blank">
+          <span class="link-icon">⌥</span>
+          <div>
+            <div>github.com/andrej4771</div>
+            <div class="link-label">GitHub</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/andrej" class="contact-link" target="_blank">
+          <span class="link-icon">in</span>
+          <div>
+            <div>linkedin.com/in/andrej</div>
+            <div class="link-label">LinkedIn</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="terminal-block">
+      <div class="terminal-bar">
+        <div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>
+      </div>
+      <div class="t-line"><span class="t-prompt">andrej@dev:~$</span> <span class="t-cmd">whoami</span></div>
+      <div class="t-line t-out green">andrej-atanaskov</div>
+      <br>
+      <div class="t-line"><span class="t-prompt">andrej@dev:~$</span> <span class="t-cmd">cat status.txt</span></div>
+      <div class="t-line t-out">Currently studying @ FINKI</div>
+      <div class="t-line t-out green">Open to internships &amp; collab</div>
+      <br>
+      <div class="t-line"><span class="t-prompt">andrej@dev:~$</span> <span class="t-cmd">echo $RESPONSE_TIME</span></div>
+      <div class="t-line t-out blue">usually within 24h</div>
+      <br>
+      <div class="t-line"><span class="t-prompt">andrej@dev:~$</span> <span class="t-cmd">_<span style="animation:blink 1s step-end infinite;display:inline-block;background:var(--accent);width:8px;height:1em;vertical-align:middle;"></span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 <span class="acc">Andrej Atanaskov</span> — built with HTML, CSS, caffeine and Claude :P</div>
+  <div>Skopje, Macedonia</div>
+</footer>
+
+<script>
+  // Intersection observer for scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // Animate skill bars
+        entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+          bar.style.width = bar.dataset.width + '%';
+        });
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up, .stagger').forEach(el => observer.observe(el));
+
+  // Animate skill bars on initial load if visible
+  document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+    bar.style.width = '0%';
+  });
+
+  // Typewriter on hero tag
+  const tag = document.querySelector('.hero-tag');
+  const text = 'available for opportunities';
+  tag.textContent = '';
+  const before = document.createElement('span');
+  before.style.cssText = 'display:inline-block;width:40px;height:1px;background:var(--accent);box-shadow:var(--glow);margin-right:0.75rem;vertical-align:middle;';
+  tag.appendChild(before);
+  let i = 0;
+  const span = document.createElement('span');
+  tag.appendChild(span);
+  const type = () => {
+    if (i < text.length) {
+      span.textContent += text[i++];
+      setTimeout(type, 55);
+    }
+  };
+  setTimeout(type, 600);
+</script>
+</body>
+</html>
