@@ -58,8 +58,7 @@ mindset:    "understand the system before you secure it"
 ## 📊 Stats
 
 <p align="center">
-  <img height="155em" src="https://github-readme-stats.vercel.app/api?username=andrej4771&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&hide=prs"/>
-  <img height="155em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andrej4771&layout=compact&theme=tokyonight&hide_border=true"/>
+  <img src="https://streak-stats.demolab.com?user=andrej4771&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
 </p>
 
 ---
