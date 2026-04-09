@@ -1,12 +1,12 @@
 <div align="center">
 
-# 👋 Hi, I'm Andrej
+# Hi, I'm Andrej
 
 
 
 🎓 **Internet, Networks & Security Student**  
-⚙️ **Faculty of Computer Science and Engineering**
-🐧 **Linux-first approach to building and securing systems**
+🐧 **Faculty of Computer Science and Engineering**
+
 
 I'm interested in how infrastructure, networks, and security fit together in real-world systems.
 
