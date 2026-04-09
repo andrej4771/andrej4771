@@ -1,68 +1,82 @@
 <div align="center">
 
-# Hi, I'm Andrej
+# Hey, I'm Andrej 👋
 
+🎓 **Internet, Networks & Security** — FINKI  
+📍 Skopje, Macedonia
 
-
-🎓 **Internet, Networks & Security Student**  
-🐧 **Faculty of Computer Science and Engineering**
-
-
-I'm interested in how infrastructure, networks, and security fit together in real-world systems.
+*Interested in how infrastructure, networks, and security fit together in real-world systems.*
 
 [![GitHub followers](https://img.shields.io/github/followers/andrej4771?style=social)](https://github.com/andrej4771)
+&nbsp;
 [![GitHub stars](https://img.shields.io/github/stars/andrej4771?style=social)](https://github.com/andrej4771)
 
 </div>
 
 ---
 
-## 🔍 Areas of Interest
+## 🔍 About Me
 
-```
-🌐  Computer Networks & Protocols               🐧  Linux System Administration
-🔄  DevOps Fundamentals & CI/CD                 🔒  Cybersecurity & Defensive Thinking
-🖥️  Backend Infrastructure                      📊  Monitoring & Logging
-🛡️  Security Hardening                          📡  Network Architecture
+```yaml
+focus:      [ networks, security, linux, devops, backend ]
+studying:   Internet Networks & Security @ FINKI
+currently:  building labs · hardening systems · learning devops
+mindset:    "understand the system before you secure it"
 ```
 
 ---
 
-## 🔧 Technologies & Tools
+## 🛠 Stack
 
-### Operating Systems & Core
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+**Systems & OS**
 
-### Networking & Infrastructure
-![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)
-![DNS](https://img.shields.io/badge/DNS-0078D4?style=for-the-badge&logo=cloudflare&logoColor=white)
-![TCP/IP](https://img.shields.io/badge/TCP%2FIP-0080FF?style=for-the-badge&logo=cisco&logoColor=white)
-![VPN](https://img.shields.io/badge/VPN-00599C?style=for-the-badge&logo=openvpn&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 
-### Development
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+**Networking & Infrastructure**
 
+![TCP/IP](https://img.shields.io/badge/TCP%2FIP-0080FF?style=flat-square&logo=cisco&logoColor=white)
+![DNS](https://img.shields.io/badge/DNS-0078D4?style=flat-square&logo=cloudflare&logoColor=white)
+![Apache](https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=apache&logoColor=white)
+![VPN](https://img.shields.io/badge/VPN-00599C?style=flat-square&logo=openvpn&logoColor=white)
+
+**Development**
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+**DevOps & Tools**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
 ---
 
+## 📊 Stats
 
-## Currently Working On
+<p align="center">
+  <img height="155em" src="https://github-readme-stats.vercel.app/api?username=andrej4771&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&hide=prs"/>
+  <img height="155em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andrej4771&layout=compact&theme=tokyonight&hide_border=true"/>
+</p>
 
-- Building practical network and security labs
-- Deepening knowledge in DevOps tools and practices
-- Exploring security hardening techniques
-- Setting up home lab infrastructure
+---
+
+## 🎯 Currently Working On
+
+- 🔬 Practical networking & security labs
+- 🔒 Security hardening techniques
+- 🚀 DevOps fundamentals & CI/CD pipelines
+- 🏠 Home lab infrastructure setup
 
 ---
 
 <div align="center">
 
-### 💡 *"Building secure, scalable systems one command at a time"*
+*"Building secure, scalable systems — one command at a time."*
 
-![Profile Views](https://komarev.com/ghpvc/?username=andrej4771&color=blueviolet&style=flat-square)
+![Profile Views](https://komarev.com/ghpvc/?username=andrej4771&color=6e40c9&style=flat-square&label=views)
 
 </div>
